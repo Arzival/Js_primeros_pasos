@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-color: gray;
+        color: white;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        float: left;
+        margin: 20px;
+      }
+      .dashed {
+        border: 3px dashed black;
+        padding: 5px;
+      }
+    </style>
+
+    <title>Document</title>
+    <script src="funciones.js"></script>
+  </head>
+  <body>
+    <h1>Practica</h1>
+    <div class="box">
+      <form action="#" method="POST" id="formulario" onsubmit="return false;">
+        <label for="nombre">Nombre</label> <br />
+        <input type="text" name="nombre" id="nombre" />
+        <br />
+        <label for="apellidos">Apellidos</label> <br />
+        <input type="text" name="apellidos" id="apellidos" />
+        <br />
+        <label for="edad">Edad</label><br />
+        <input type="number" name="edad" id="edad" />
+        <br />
+        <input type="submit" value="Enviar" id="submit" />
+      </form>
+    </div>
+    <div class="box dashed">
+      <h3>Informacion del usuario</h3>
+      <hr />
+    </div>
+  </body>
+</html>
