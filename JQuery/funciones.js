@@ -12,4 +12,11 @@ $(document).ready(function () {
   $(".sin_borde").click(function () {
     $(this).css("border", "5px dashed black"); // con una clase de css seria .addClass(nombre de la clase css)
   });
+
+  // selector de etiquetas
+  var parrafo = $('p');
+  parrafo.click(function () {
+      console.log('remove');
+    $(this).removeClass("zebra");
+  });
 });
