@@ -6,17 +6,17 @@ $(document).ready(function () {
 
   // selector por clase
 
-  var parrafos = $(".zebra");
-  parrafos.css("border", "5px dashed black");
+  //   var parrafos = $(".zebra");
+  //   parrafos.css("border", "5px dashed black");
 
-  $(".sin_borde").click(function () {
-    $(this).css("border", "5px dashed black"); // con una clase de css seria .addClass(nombre de la clase css)
-  });
+  //   $(".sin_borde").click(function () {
+  //     $(this).addClass('zebra'); // con una clase de css seria .addClass(nombre de la clase css)
+  //   });
 
   // selector de etiquetas
-  var parrafo = $('p');
+  var parrafo = $("p");
   parrafo.click(function () {
-      console.log('remove');
+    console.log("remove");
     $(this).removeClass("zebra");
   });
 });
