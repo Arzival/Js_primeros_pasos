@@ -8,16 +8,19 @@ $(document).ready(function () {
   //     $("#datos").append("<p>" + element.first_name + "</p>");
   //   });
   // });
-  $.ajax({
-    type: "GET",
-    url:"https://reqres.in/api/users?page=2",
-    success:  (response) => {
-        console.log(response);
-        response.data.forEach(element => {
-          $("#datos").append("<p>" + element.first_name + "</p>");
-        });
-    }
-});
+  $('#cargar').click(function () { 
+    $.ajax({
+      type: "GET",
+      url:"https://reqres.in/api/users?page=2",
+      success:  (response) => {
+          console.log(response);
+          response.data.forEach(element => {
+            $("#datos").append("<p>" + element.first_name + "</p>");
+          });
+      }
+  });
+    
+  });
 
   $("#formulario").submit(function (e) {
     e.preventDefault();
